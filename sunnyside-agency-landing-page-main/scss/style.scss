@@ -1,0 +1,341 @@
+/*Colors*/
+$primaryColorFont: #ffff;
+/*Global Styles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    font-family: 'Fraunces', serif;
+    font-family: 'Barlow', sans-serif;
+    font-size: 22px;    
+    margin-left: auto;
+    margin-right: auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Header Styles*/
+.header{
+    padding: 5em 2em;
+    background-image: url("../img/image-header.jpg");
+    background-size: cover; /*Ocupa todo o espaço declarado*/
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    .logo{
+        margin-left: 5em;
+        &__img{
+            width: 230px;
+        }
+    }
+    .menu{
+        width: 100%;
+        &__list{
+            display: flex;
+            gap: 4em;
+            margin-left: 37vw;
+            &__item{
+                &__link{
+                    color: $primaryColorFont;
+                    font-weight: bold;
+                    font-size: 28px;
+                }
+            }
+            .contact{
+                width: 9em;
+                height: 4em;
+                background: $primaryColorFont;
+                border-radius: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -20px;
+                a{
+                    color: black;
+                    font-family: 'Fraunces', serif;;
+                }
+            }
+        }
+    }
+ 
+    &__highlight{
+        display: flex;
+        justify-content: center;  
+        height: 90vh;   
+        position: relative;
+        &__text{
+            color: $primaryColorFont;
+            font-size: 100px;
+            font-family: 'Fraunces', serif;
+            margin: 20vh;
+        }
+        .arrow{
+            position: absolute;
+            margin: 50vh;
+            &__img{
+
+            }
+        }
+    }
+}
+/*Content Styles*/
+.content{
+    width: 100%;
+    .brand{
+        display: flex;
+        justify-content: space-between;
+        &__text{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                margin-bottom: 2em;
+                margin-left: 20%;
+                
+            }
+            p{
+                width: 65%;
+                margin-bottom: 2em;
+                margin-left: 20%; 
+            }
+            a{
+                font-weight: bold;
+                font-family: 'Fraunces', serif;
+                position: relative;
+            }
+            a:before{
+                content: "";
+                width: 127px;
+                height: 7px;
+                background: rgba(255, 217, 0, 0.527);
+                position: absolute;
+                top: 60%;
+            }
+        }
+        &__img{
+            width: 100%;
+            height: 70vh;
+            background-image: url(../img/image-transform.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    .audience{
+        display: flex;
+        justify-content: space-between;
+        &__img{
+            width: 100%;
+            height: 70vh;
+            background-image: url(../img/image-stand-out.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &__text{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                margin-bottom: 2em;
+                margin-left: 20%;
+                
+            }
+            p{
+                width: 65%;
+                margin-bottom: 2em;
+                margin-left: 20%; 
+            }
+            .link{
+                font-weight: bold;
+                font-family: 'Fraunces', serif;
+                position: relative;
+            }
+            .link:before{
+                content: "";
+                width: 127px;
+                height: 7px;
+                background: rgba(205, 92, 92, 0.541);
+                position: absolute;
+                top: 60%;
+            }
+        }
+    }
+    .cherry{
+        display: flex;
+        justify-content: space-between;
+        &__boxLeft{
+            width: 100%;
+            height: 70vh;
+            background-image: url(../img/image-graphic-design.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-end;
+            align-items: center;
+            h2{
+                color:rgb(64, 114, 97);
+                margin-bottom: 1em;
+            }
+            p{
+                color:rgb(64, 114, 97);
+                margin-bottom: 2em;
+                width: 70%;
+                text-align: center;
+            }
+
+        }
+        &__boxRight{
+            width: 100%;
+            height: 70vh;
+            background-image: url(../img/image-photography.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content:flex-end;
+            align-items: center;
+            h2{
+                color: rgb(53, 120, 143);
+                margin-bottom: 1em;
+            }
+            p{
+                color:rgb(53, 120, 143);
+                margin-bottom: 2em;
+                width: 70%;
+                text-align: center;
+            }
+        }
+    }
+}
+/*Testimonials Styles*/
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    width: 100%;
+    &__titule{
+        font-family: 'Fraunces', serif;
+        font-size: 32px;
+        letter-spacing: 2px;
+        color:rgb(108, 109, 110);
+    }
+    .box{
+        display: flex;
+        width: 100%;
+        height: 80%;
+        align-items: center;
+        justify-content: space-around;
+        &__item{
+            width: 26%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            &__img{
+                border-radius: 50%;
+            }
+            &__text{
+                text-align: center;
+            }
+            &__name{
+                font-weight: bold;
+                font-family: 'Fraunces', serif;
+
+            }
+            &__occupation{
+                font-family: 'Fraunces', serif;
+                font-weight: 200;
+            }                   
+        }
+    }
+}
+/*Transition Styles*/
+.transition{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    &__milk{
+        background-image: url(../img/image-gallery-milkbottles.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25%;
+        height: 100%;
+    }
+    &__orange{
+        background-image: url(../img/image-gallery-orange.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25%;
+        height: 100%;
+    }
+    &__ice{
+        background-image: url(../img/image-gallery-cone.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25%;
+        height: 100%;
+    }
+    &__sugar{
+        background-image: url(../img/image-gallery-sugarcubes.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 25%;
+        height: 100%;
+    }
+}
+/*Footer Styles*/
+.footer{
+    width: 100%;
+    height: 40vh;
+    background: rgb(85, 163, 137);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    &__logo{
+        margin-top: 5%;
+        color:rgb(47, 87, 74);
+    }
+    &__nav{
+        width: 20vw;
+        display: flex;
+        justify-content: space-around;
+        color:rgb(47, 87, 74);
+    }
+    &__media{
+        display: flex;
+        width: 8vw;
+        justify-content: space-around;
+        &__link{
+            &__img{
+
+            }
+        }
+    }
+}
+.attribution{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3em;
+}
